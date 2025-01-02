@@ -6,11 +6,8 @@ orgs.newOrg('iot.amlen', 'eclipse-amlen') {
     name: "Eclipse Amlen project",
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
-      default_workflow_permissions: "read",
     },
   },
-  teams+: [
-  ],
   webhooks+: [
     orgs.newOrgWebhook('https://ci.eclipse.org/amlen/github-webhook/') {
       content_type: "json",
