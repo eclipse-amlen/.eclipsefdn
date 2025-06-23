@@ -23,11 +23,9 @@ orgs.newOrg('iot.amlen', 'eclipse-amlen') {
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "go",
-        "javascript",
         "javascript-typescript",
         "python",
         "ruby",
-        "typescript"
       ],
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
